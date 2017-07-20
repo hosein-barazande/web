@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu meaker</title>
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css">
+    <script type="text/javascript" src="MenuJS.js"></script>
+</head>
+<body>
+<div class="div-back">
+    <div class="mar">
+        width : <input class="input-redus" type="text" id="width" min="500" value="">
+        height : <input  class="input-redus" type="text" id="height" min="500" value="">
+    </div>
+    <br>
+    <div  class="cover">
+        cover menu  <input type="checkbox" id="cover" >
+    </div>
+    <br>
+    <div class="color-mar">
+        choose your color :  <input type="color" id="color" value="#2c3cff" >
+    </div>
+    <br>
+    <h4>please select the menu position :</h4>
+    <form id="myradio">
+        right : <input type="radio" name="radio" value="right" checked>
+        left : <input type="radio" name="radio" value="left" >
+    </form>
+
+    <br>
+    <br>
+    <input class="intext" type="text" id="myinput" placeholder="new menu item...">
+    <span class="span" onclick="newelement()">add</span>
+
+    <ul id="myul" class="nav-ul">
+    </ul>
+
+    <button class="btn" type="button" id="btn" onclick="myfunc()">submit</button>
+
+</div>
+<div>
+    <p id="back"></p>
+    <p id="nav"></p>
+</div>
+</body>
+</html>
